@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.nevyan.photonicsforall" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".App">
+        <activity
+            android:name=".MainActivity"
+            android:label="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Signup"
+            android:label="@style/Theme.AppCompat.NoActionBar"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CategoriesActivity"
+            android:label="@style/Theme.AppCompat.NoActionBar"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Categories.basicsPhotonicsActivity"
+            android:label="@string/title_activity_basics_photonics"
+            android:parentActivityName=".CategoriesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.CategoriesActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.CategoryUEQ.ExploreControlUEQActivity"
+            android:label="@string/title_activity_explore_control_ueq"
+            android:parentActivityName=".Categories.basicsPhotonicsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.basicsPhotonicsActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.CategoryUEQ.OpticRraysWavesUEQActivity"
+            android:label="OpticRraysWavesUEQActivity"
+            android:parentActivityName=".Categories.basicsPhotonicsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.basicsPhotonicsActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.explore_control.ExploreControlQuizActivity"
+            android:label="@string/title_activity_explore_control_quiz"
+            android:parentActivityName=".BasicsPhotonics.CategoryUEQ.ExploreControlUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BasicsPhotonics.CategoryUEQ.ExploreControlUEQActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.explore_control.ExploreControlExperimentActivity"
+            android:label="@string/title_activity_explore_control_experiment"
+            android:parentActivityName=".BasicsPhotonics.CategoryUEQ.ExploreControlUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BasicsPhotonics.CategoryUEQ.ExploreControlUEQActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.explore_control.ExploreControleUnderstandActivity"
+            android:label="@string/title_activity_explore_controle_understand"
+            android:parentActivityName=".BasicsPhotonics.CategoryUEQ.ExploreControlUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BasicsPhotonics.CategoryUEQ.ExploreControlUEQActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.OpticRaysWaves.OpticRraysWavesExperimentActivity"
+            android:label="OpticRraysWavesExperimentActivity"
+            android:parentActivityName=".BasicsPhotonics.CategoryUEQ.OpticRraysWavesUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BasicsPhotonics.CategoryUEQ.OpticRraysWavesUEQActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.OpticRaysWaves.OpticRraysWavesQuizActivity"
+            android:label="OpticRraysWavesQuizActivity"
+            android:parentActivityName=".BasicsPhotonics.CategoryUEQ.OpticRraysWavesUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BasicsPhotonics.CategoryUEQ.OpticRraysWavesUEQActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.OpticRaysWaves.OpticRraysWavesUnderstandActivity"
+            android:label="OpticRraysWavesUnderstandActivity"
+            android:parentActivityName=".BasicsPhotonics.CategoryUEQ.OpticRraysWavesUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BasicsPhotonics.CategoryUEQ.OpticRraysWavesUEQActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.CategoryUEQ.LensesNMirrorsUEQActivity"
+            android:label="@string/title_activity_lenses_nmirrors_ueq"
+            android:parentActivityName=".Categories.basicsPhotonicsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.basicsPhotonicsActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.LensesNMirrors.LensesNMirrorsUnderstandActivity"
+            android:label="@string/title_activity_lenses_nmirrors_understand"
+            android:parentActivityName=".BasicsPhotonics.CategoryUEQ.LensesNMirrorsUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BasicsPhotonics.CategoryUEQ.LensesNMirrorsUEQActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.LensesNMirrors.LensesNMirrorsQuizActivity"
+            android:label="@string/title_activity_lenses_nmirrors_quiz"
+            android:parentActivityName=".BasicsPhotonics.CategoryUEQ.LensesNMirrorsUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BasicsPhotonics.CategoryUEQ.LensesNMirrorsUEQActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.LensesNMirrors.LensesNMirrorsExperimentActivity"
+            android:label="@string/title_activity_lenses_nmirrors_experiment"
+            android:parentActivityName=".BasicsPhotonics.CategoryUEQ.LensesNMirrorsUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BasicsPhotonics.CategoryUEQ.LensesNMirrorsUEQActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.CategoryUEQ.LaserConceptUEQActivity"
+            android:label="@string/title_activity_laser_concept_ueq"
+            android:parentActivityName=".Categories.basicsPhotonicsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.basicsPhotonicsActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.Laser_Concept.LaserConceptUnderstandActivity"
+            android:label="@string/title_activity_laser_concept_understand"
+            android:parentActivityName=".BasicsPhotonics.CategoryUEQ.LaserConceptUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BasicsPhotonics.CategoryUEQ.LaserConceptUEQActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.Laser_Concept.LaserConceptQuizActivity"
+            android:label="@string/title_activity_laser_concept_quiz"
+            android:parentActivityName=".BasicsPhotonics.CategoryUEQ.LaserConceptUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BasicsPhotonics.CategoryUEQ.LaserConceptUEQActivity" />
+        </activity>
+        <activity
+            android:name=".BasicsPhotonics.Laser_Concept.LaserConceptExperiment"
+            android:label="@string/title_activity_laser_concept_experiment"
+            android:parentActivityName=".BasicsPhotonics.CategoryUEQ.LaserConceptUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BasicsPhotonics.CategoryUEQ.LaserConceptUEQActivity" />
+        </activity>
+        <activity
+            android:name=".Categories.PhotonicsForICT"
+            android:label="@string/title_activity_photonics_for_ict"
+            android:parentActivityName=".CategoriesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.CategoriesActivity" />
+        </activity>
+        <activity
+            android:name=".PhotonicsForICT.CategoryUEQ.OpticalCommunicationUEQActivity"
+            android:label="@string/title_activity_optical_communication_ueq"
+            android:parentActivityName=".Categories.PhotonicsForICT"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.PhotonicsForICT" />
+        </activity>
+        <activity
+            android:name=".PhotonicsForICT.OpticalCommunication.OpticalCommunicationExperiment"
+            android:label="@string/title_activity_optical_communication_experiment"
+            android:parentActivityName=".PhotonicsForICT.CategoryUEQ.OpticalCommunicationUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.PhotonicsForICT.CategoryUEQ.OpticalCommunicationUEQActivity" />
+        </activity>
+        <activity
+            android:name=".PhotonicsForICT.OpticalCommunication.OpticalCommunicationQuiz"
+            android:label="@string/title_activity_optical_communication_quiz"
+            android:parentActivityName=".PhotonicsForICT.CategoryUEQ.OpticalCommunicationUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.PhotonicsForICT.CategoryUEQ.OpticalCommunicationUEQActivity" />
+        </activity>
+        <activity
+            android:name=".PhotonicsForICT.OpticalCommunication.OpticalCommunicationUnderstand"
+            android:label="@string/title_activity_optical_communication_understand"
+            android:parentActivityName=".PhotonicsForICT.CategoryUEQ.OpticalCommunicationUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.PhotonicsForICT.CategoryUEQ.OpticalCommunicationUEQActivity" />
+        </activity>
+        <activity
+            android:name=".PhotonicsForICT.CategoryUEQ.OpticalStorageUEQActivity"
+            android:label="@string/title_activity_optical_storage_ueq"
+            android:parentActivityName=".Categories.PhotonicsForICT"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.PhotonicsForICT" />
+        </activity>
+        <activity
+            android:name=".PhotonicsForICT.OpticalStorage.OpticalStorageExperiment"
+            android:label="@string/title_activity_optical_storage_experiment"
+            android:parentActivityName=".PhotonicsForICT.CategoryUEQ.OpticalStorageUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.PhotonicsForICT.CategoryUEQ.OpticalStorageUEQActivity" />
+        </activity>
+        <activity
+            android:name=".PhotonicsForICT.OpticalStorage.OpticalStorageQuiz"
+            android:label="@string/title_activity_optical_storage_quiz"
+            android:parentActivityName=".PhotonicsForICT.CategoryUEQ.OpticalStorageUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.PhotonicsForICT.CategoryUEQ.OpticalStorageUEQActivity" />
+        </activity>
+        <activity
+            android:name=".PhotonicsForICT.OpticalStorage.OpticalStorageUnderstand"
+            android:label="@string/title_activity_optical_storage_understand"
+            android:parentActivityName=".PhotonicsForICT.CategoryUEQ.OpticalStorageUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.PhotonicsForICT.CategoryUEQ.OpticalStorageUEQActivity" />
+        </activity>
+        <activity
+            android:name=".PhotonicsForICT.CategoryUEQ.ImageNVideoUEQActivity"
+            android:label="@string/title_activity_image_nvideo_ueq"
+            android:parentActivityName=".Categories.PhotonicsForICT"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.PhotonicsForICT" />
+        </activity>
+        <activity
+            android:name=".PhotonicsForICT.ImageNVideo.ImageNvideoExperiment"
+            android:label="@string/title_activity_image_nvideo_experiment"
+            android:parentActivityName=".PhotonicsForICT.CategoryUEQ.ImageNVideoUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.PhotonicsForICT.CategoryUEQ.ImageNVideoUEQActivity" />
+        </activity>
+        <activity
+            android:name=".PhotonicsForICT.ImageNVideo.ImageNvideoQuiz"
+            android:label="@string/title_activity_image_nvideo_quiz"
+            android:parentActivityName=".PhotonicsForICT.CategoryUEQ.ImageNVideoUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.PhotonicsForICT.CategoryUEQ.ImageNVideoUEQActivity" />
+        </activity>
+        <activity
+            android:name=".PhotonicsForICT.ImageNVideo.ImageNvideoUnderstand"
+            android:label="@string/title_activity_image_nvideo_understand"
+            android:parentActivityName=".PhotonicsForICT.CategoryUEQ.ImageNVideoUEQActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.PhotonicsForICT.CategoryUEQ.ImageNVideoUEQActivity" />
+        </activity>
+        <activity
+            android:name=".Categories.EnergyLnDActivity"
+            android:label="@string/title_activity_energy_ln_d"
+            android:parentActivityName=".CategoriesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.CategoriesActivity" />
+        </activity>
+        <activity
+            android:name=".EnergyLnD.CategoryUEQ.LightningUEQ"
+            android:label="@string/title_activity_lightning_ueq"
+            android:parentActivityName=".Categories.EnergyLnDActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.EnergyLnDActivity" />
+        </activity>
+        <activity
+            android:name=".EnergyLnD.Lightning.LightningExperiment"
+            android:label="@string/title_activity_lightning_experiment"
+            android:parentActivityName=".EnergyLnD.CategoryUEQ.LightningUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.EnergyLnD.CategoryUEQ.LightningUEQ" />
+        </activity>
+        <activity
+            android:name=".EnergyLnD.Lightning.LightningQuiz"
+            android:label="@string/title_activity_lightning_quiz"
+            android:parentActivityName=".EnergyLnD.CategoryUEQ.LightningUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.EnergyLnD.CategoryUEQ.LightningUEQ" />
+        </activity>
+        <activity
+            android:name=".EnergyLnD.Lightning.LightningUnderstand"
+            android:label="@string/title_activity_lightning_understand"
+            android:parentActivityName=".EnergyLnD.CategoryUEQ.LightningUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.EnergyLnD.CategoryUEQ.LightningUEQ" />
+        </activity>
+        <activity
+            android:name=".EnergyLnD.CategoryUEQ.DisplayUEQ"
+            android:label="@string/title_activity_display_ueq"
+            android:parentActivityName=".Categories.EnergyLnDActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.EnergyLnDActivity" />
+        </activity>
+        <activity
+            android:name=".EnergyLnD.Display.DisplayExperiment"
+            android:label="@string/title_activity_display_experiment"
+            android:parentActivityName=".EnergyLnD.CategoryUEQ.DisplayUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.EnergyLnD.CategoryUEQ.DisplayUEQ" />
+        </activity>
+        <activity
+            android:name=".EnergyLnD.Display.DisplayQuiz"
+            android:label="@string/title_activity_display_quiz"
+            android:parentActivityName=".EnergyLnD.CategoryUEQ.DisplayUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.EnergyLnD.CategoryUEQ.DisplayUEQ" />
+        </activity>
+        <activity
+            android:name=".EnergyLnD.Display.DisplayUnderstand"
+            android:label="@string/title_activity_display_understand"
+            android:parentActivityName=".EnergyLnD.CategoryUEQ.DisplayUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.EnergyLnD.CategoryUEQ.DisplayUEQ" />
+        </activity>
+        <activity
+            android:name=".EnergyLnD.CategoryUEQ.EnergyUEQ"
+            android:label="@string/title_activity_energy_ueq"
+            android:parentActivityName=".Categories.EnergyLnDActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.EnergyLnDActivity" />
+        </activity>
+        <activity
+            android:name=".EnergyLnD.Energy.EnergyExperiment"
+            android:label="@string/title_activity_energy_experiment"
+            android:parentActivityName=".EnergyLnD.CategoryUEQ.EnergyUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.EnergyLnD.CategoryUEQ.EnergyUEQ" />
+        </activity>
+        <activity
+            android:name=".EnergyLnD.Energy.EnergyQuiz"
+            android:label="@string/title_activity_energy_quiz"
+            android:parentActivityName=".EnergyLnD.CategoryUEQ.EnergyUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.EnergyLnD.CategoryUEQ.EnergyUEQ" />
+        </activity>
+        <activity
+            android:name=".EnergyLnD.Energy.EnergyUnderstand"
+            android:label="@string/title_activity_energy_understand"
+            android:parentActivityName=".EnergyLnD.CategoryUEQ.EnergyUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.EnergyLnD.CategoryUEQ.EnergyUEQ" />
+        </activity>
+        <activity
+            android:name=".Categories.PhotonicsSecurityActivity"
+            android:label="@string/title_activity_photonics_security"
+            android:parentActivityName=".CategoriesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.CategoriesActivity" />
+        </activity>
+        <activity
+            android:name=".PhotonicsSecurity.UEQActivity.MetrologyUEQ"
+            android:label="@string/title_activity_metrology_ueq"
+            android:parentActivityName=".Categories.PhotonicsSecurityActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.PhotonicsSecurityActivity" />
+        </activity>
+        <activity
+            android:name=".PhotonicsSecurity.Metrology.MetrologyQuiz"
+            android:label="@string/title_activity_metrology_quiz"
+            android:parentActivityName=".PhotonicsSecurity.UEQActivity.MetrologyUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.PhotonicsSecurity.UEQActivity.MetrologyUEQ" />
+        </activity>
+        <activity
+            android:name=".PhotonicsSecurity.Metrology.MetrologyExperiment"
+            android:label="@string/title_activity_metrology_experiment"
+            android:parentActivityName=".PhotonicsSecurity.UEQActivity.MetrologyUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.PhotonicsSecurity.UEQActivity.MetrologyUEQ" />
+        </activity>
+        <activity
+            android:name=".PhotonicsSecurity.Metrology.MetrologyUnderstand"
+            android:label="@string/title_activity_metrology_understand"
+            android:parentActivityName=".PhotonicsSecurity.UEQActivity.MetrologyUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.PhotonicsSecurity.UEQActivity.MetrologyUEQ" />
+        </activity>
+        <activity
+            android:name=".PhotonicsSecurity.UEQActivity.SafetySecurityUEQ"
+            android:label="@string/title_activity_safety_security_ueq"
+            android:parentActivityName=".Categories.PhotonicsSecurityActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.PhotonicsSecurityActivity" />
+        </activity>
+        <activity
+            android:name=".PhotonicsSecurity.SafetySecurity.SafetySecurityExperiment"
+            android:label="@string/title_activity_safety_security_experiment"
+            android:parentActivityName=".PhotonicsSecurity.UEQActivity.SafetySecurityUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.PhotonicsSecurity.UEQActivity.SafetySecurityUEQ" />
+        </activity>
+        <activity
+            android:name=".PhotonicsSecurity.SafetySecurity.SafetySecurityQuiz"
+            android:label="@string/title_activity_safety_security_quiz"
+            android:parentActivityName=".PhotonicsSecurity.UEQActivity.SafetySecurityUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.PhotonicsSecurity.UEQActivity.SafetySecurityUEQ" />
+        </activity>
+        <activity
+            android:name=".PhotonicsSecurity.SafetySecurity.SafetySecurityUnderstand"
+            android:label="@string/title_activity_safety_security_understand"
+            android:parentActivityName=".PhotonicsSecurity.UEQActivity.SafetySecurityUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.PhotonicsSecurity.UEQActivity.SafetySecurityUEQ" />
+        </activity>
+        <activity
+            android:name=".Categories.HnLScienceActivity"
+            android:label="@string/title_activity_hn_lscience"
+            android:parentActivityName=".CategoriesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.CategoriesActivity" />
+        </activity>
+        <activity
+            android:name=".HnLScience.UEQActivity.MicroscopyUEQ"
+            android:label="@string/title_activity_microscopy_ueq"
+            android:parentActivityName=".Categories.HnLScienceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.HnLScienceActivity" />
+        </activity>
+        <activity
+            android:name=".HnLScience.Microscopy.MicroscopyQuiz"
+            android:label="@string/title_activity_microscopy_quiz"
+            android:parentActivityName=".HnLScience.UEQActivity.MicroscopyUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HnLScience.UEQActivity.MicroscopyUEQ" />
+        </activity>
+        <activity
+            android:name=".HnLScience.Microscopy.MicroscopyExperiment"
+            android:label="@string/title_activity_microscopy_experiment"
+            android:parentActivityName=".HnLScience.UEQActivity.MicroscopyUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HnLScience.UEQActivity.MicroscopyUEQ" />
+        </activity>
+        <activity
+            android:name=".HnLScience.Microscopy.MicroscopyUnderstand"
+            android:label="@string/title_activity_microscopy_understand"
+            android:parentActivityName=".HnLScience.UEQActivity.MicroscopyUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HnLScience.UEQActivity.MicroscopyUEQ" />
+        </activity>
+        <activity
+            android:name=".HnLScience.UEQActivity.ImagingActivityUEQ"
+            android:label="@string/title_activity_imaging"
+            android:parentActivityName=".Categories.HnLScienceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.HnLScienceActivity" />
+        </activity>
+        <activity
+            android:name=".HnLScience.Imaging.ImagingQuiz"
+            android:label="@string/title_activity_imaging_quiz"
+            android:parentActivityName=".HnLScience.UEQActivity.ImagingActivityUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.HnLScience.UEQActivity.ImagingActivityUEQ" />
+        </activity>
+        <activity
+            android:name=".HnLScience.Imaging.ImagingExperiment"
+            android:label="@string/title_activity_imaging_experiment"
+            android:parentActivityName=".HnLScience.UEQActivity.ImagingActivityUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.HnLScience.UEQActivity.ImagingActivityUEQ" />
+        </activity>
+        <activity
+            android:name=".HnLScience.Imaging.ImagingUnderstand"
+            android:label="@string/title_activity_imaging_understand"
+            android:parentActivityName=".HnLScience.UEQActivity.ImagingActivityUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.HnLScience.UEQActivity.ImagingActivityUEQ" />
+        </activity>
+        <activity
+            android:name=".HnLScience.UEQActivity.SpectrometryUEQ"
+            android:label="@string/title_activity_spectrometry_ueq"
+            android:parentActivityName=".Categories.HnLScienceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.HnLScienceActivity" />
+        </activity>
+        <activity
+            android:name=".HnLScience.Spectrometry.SpectrometryQuiz"
+            android:label="@string/title_activity_spectrometry_quiz"
+            android:parentActivityName=".HnLScience.UEQActivity.SpectrometryUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.HnLScience.UEQActivity.SpectrometryUEQ" />
+        </activity>
+        <activity
+            android:name=".HnLScience.Spectrometry.SpectrometryExperiment"
+            android:label="@string/title_activity_spectrometry_experiment"
+            android:parentActivityName=".HnLScience.UEQActivity.SpectrometryUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.HnLScience.UEQActivity.SpectrometryUEQ" />
+        </activity>
+        <activity
+            android:name=".HnLScience.Spectrometry.SpectrometryUnderstand"
+            android:label="@string/title_activity_spectrometry_understand"
+            android:parentActivityName=".HnLScience.UEQActivity.SpectrometryUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.HnLScience.UEQActivity.SpectrometryUEQ" />
+        </activity>
+        <activity
+            android:name=".HnLScience.UEQActivity.LaserTherapyUEQ"
+            android:label="@string/title_activity_laser_therapy_ueq"
+            android:parentActivityName=".Categories.HnLScienceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.Categories.HnLScienceActivity" />
+        </activity>
+        <activity
+            android:name=".HnLScience.LaserTherapy.LaserTherapyQuiz"
+            android:label="@string/title_activity_laser_therapy_quiz"
+            android:parentActivityName=".HnLScience.UEQActivity.LaserTherapyUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.HnLScience.UEQActivity.LaserTherapyUEQ" />
+        </activity>
+        <activity
+            android:name=".HnLScience.LaserTherapy.LaserTherapyExperiment"
+            android:label="@string/title_activity_laser_therapy_experiment"
+            android:parentActivityName=".HnLScience.UEQActivity.LaserTherapyUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.HnLScience.UEQActivity.LaserTherapyUEQ" />
+        </activity>
+        <activity
+            android:name=".HnLScience.LaserTherapy.LaserTherapyUnderstand"
+            android:label="@string/title_activity_laser_therapy_understand"
+            android:parentActivityName=".HnLScience.UEQActivity.LaserTherapyUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.nevyan.photonicsforall.HnLScience.UEQActivity.LaserTherapyUEQ" />
+        </activity>
+        <activity
+            android:name=".exprience_tools.VideoPlayer"
+            android:parentActivityName=".HnLScience.UEQActivity.LaserTherapyUEQ"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".exprience_tools.ListVideos" >
+        </activity>
+    </application>
+
+</manifest>

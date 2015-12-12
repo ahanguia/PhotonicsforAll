@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="0.8">
+    <include
+        layout="@layout/header"
+        ></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:text="@string/microscopy"
+        android:background="@color/red_d"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:onClick="onClkUEQMicroscopy"
+        style="@style/button_categorie_style" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:text="@string/imaging"
+        android:background="@color/red_l1"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:onClick="onClkUEQImaging"
+        style="@style/button_categorie_style" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:text="@string/spectrometry"
+        android:background="@color/red_l2"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:onClick="onClkUEQSpectrometry"
+        style="@style/button_categorie_style" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:text="@string/laser_therapy"
+        android:background="@color/red_l3"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:onClick="onClkUEQLaserTherapy"
+        style="@style/button_categorie_style" />
+
+
+</LinearLayout>

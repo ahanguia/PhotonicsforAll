@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.android.nevyan.photonicsforall.CategoriesActivity"
+    android:background="@mipmap/background_accueuil"
+    android:id="@+id/big_RL"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/header"
+        ></include>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.android.nevyan.photonicsforall.CategoriesActivity"
+        android:id="@+id/RL_bkgrd_transparent"
+        android:layout_weight="0.8"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:id="@+id/btn_basics_photonics"
+            android:scaleType="fitXY"
+            android:src="@mipmap/button_basics_photonics_concepts"
+            android:background="#00000000"
+            android:onClick="OnClkBasics"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:id="@+id/btn_ict"
+            android:scaleType="fitXY"
+            android:src="@mipmap/button_photonics_for_ict"
+            android:onClick="OnClkPhotonicsForICT"
+            android:background="#00000000" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:id="@+id/btn_energy"
+            android:scaleType="fitXY"
+            android:src="@mipmap/button_photonics_for_energy_lighting_display"
+            android:layout_below="@id/btn_ict"
+            android:onClick="OnClkEnergyLnD"
+            android:background="#00000000" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:id="@+id/btn_security"
+            android:scaleType="fitXY"
+            android:src="@mipmap/button_photonics_for_security_monitoring_sensing"
+            android:layout_below="@id/btn_energy"
+            android:onClick="OnClkSecurity"
+
+            android:background="#00000000" />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:id="@+id/btn_health"
+            android:scaleType="fitXY"
+            android:src="@mipmap/button_photonics_for_health_and_life_science"
+            android:layout_below="@id/btn_security"
+            android:onClick="OnClkHnlScience"
+            android:background="#00000000" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+

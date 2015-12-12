@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="0.6">
+    <include
+        layout="@layout/header"
+        ></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:text="@string/optical_communication"
+        android:background="@color/green_d"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:onClick="onClkUEQopticalCommuniciation"
+        style="@style/button_categorie_style" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:text="@string/optical_storage"
+        android:background="@color/green_l1"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:onClick="onClkUEQopticalStorage"
+        style="@style/button_categorie_style" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:text="@string/image_n_video"
+        android:background="@color/green_l2"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:onClick="onClkUEQImageNVideo"
+        style="@style/button_categorie_style" />
+
+
+</LinearLayout>

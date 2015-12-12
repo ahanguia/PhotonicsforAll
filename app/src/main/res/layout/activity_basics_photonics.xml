@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="0.8">
+    <include
+        layout="@layout/header"
+        ></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:text="@string/explore_n_control_light"
+        android:background="@color/blue_d"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:onClick="onClkUEQexploreControl"
+        style="@style/button_categorie_style" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:text="@string/optics_are_rays"
+        android:background="@color/blue_l1"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:onClick="onClkUEQopticRraysWaves"
+        style="@style/button_categorie_style" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:text="@string/lenses_n_mirrors"
+        android:background="@color/blue_l2"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:onClick="onClkUEQLensesNMirrors"
+        style="@style/button_categorie_style" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:layout_weight="0.2"
+        android:text="@string/laser_concepts"
+        android:background="@color/blue_l3"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:onClick="onClkUEQLaserConcept"
+        style="@style/button_categorie_style" />
+</LinearLayout>

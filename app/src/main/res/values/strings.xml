@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Photonics For All</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+    <string name="title">Photonics 4 All</string>
+    <string name="copyright">Copyright</string>
+    <string name="login">Login</string>
+    <string name="back_to_menu">Back to menu</string>
+    <string name="Signup">Sign up</string>
+
+    <string name="title_activity_signin">Signin</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="email">E-mail</string>
+    <string name="dob">Date of Birth Ex: dd-mm-yyyy</string>
+
+
+    <string name="quiz">Quiz</string>
+    <string name="understand">Understand</string>
+    <string name="experiment">Experiment</string>
+
+
+    <!-- ////////  NAME OF THE CATEGORY \\\\\\\\\\\-->
+    <string name="basics_photonics">Basics photonics Concepts</string>
+    <!-- *** What the contains *** -->
+    <string name="explore_n_control_light">Explore &amp; Control light</string>
+    <string name="optics_are_rays">Optics are rays, waves and photons</string>
+    <string name="lenses_n_mirrors">Lenses &amp; Mirrors concepts</string>
+    <string name="laser_concepts">Laser concepts</string>
+
+
+    <!-- ////////  NAME OF THE CATEGORY \\\\\\\\\\\-->
+    <string name="photonics_for_ict">Photonics for ICT</string>
+    <!-- *** What the contains *** -->
+    <string name="optical_communication">Optical Communication</string>
+    <string name="optical_storage">Optical Storage</string>
+    <string name="image_n_video">Image &amp; Video</string>
+
+    <!-- ////////  NAME OF THE CATEGORY \\\\\\\\\\\-->
+    <string name="photonics_for_energy">Photonics for Energy, Lighting &amp; Display</string>
+    <!-- *** What the contains *** -->
+    <string name="lightning">Lightning</string>
+    <string name="display">Display</string>
+    <string name="energy">Energy</string>
+
+    <!-- ////////  NAME OF THE CATEGORY \\\\\\\\\\\-->
+    <string name="photonics_for_security">Photonics for Security,Monitoring &amp; Sensing</string>
+    <!-- *** What the contains *** -->
+    <string name="metrology">Metrology</string>
+    <string name="safety_n_security">Safety &amp; Security</string>
+
+    <!-- ////////  NAME OF THE CATEGORY \\\\\\\\\\\-->
+    <string name="photonics_for_health">Photonics for Health &amp; Life Science</string>
+    <!-- *** What the contains *** -->
+    <string name="microscopy">Microscopy</string>
+    <string name="imaging">Imaging</string>
+    <string name="spectrometry">Spectrometry</string>
+    <string name="laser_therapy">Laser Therapy</string>
+
+
+    <string name="title_activity_categories">CategoriesActivity</string>
+    <string name="title_activity_basics_photonics">basicsPhotonicsActivity</string>
+    <string name="title_activity_explore_control_ueq">ExploreControlUEQActivity</string>
+    <string name="title_activity_explore_control_quiz">ExploreControlQuizActivity</string>
+    <string name="title_activity_explore_control_experiment">ExploreControlExperimentActivity
+    </string>
+    <string name="title_activity_explore_controle_understand">ExploreControleUnderstandActivity
+    </string>
+    <string name="title_activity_lenses_nmirrors_ueq">LensesNMirrorsUEQActivity</string>
+    <string name="title_activity_lenses_nmirrors_understand">LensesNMirrorsUnderstandActivity
+    </string>
+    <string name="title_activity_lenses_nmirrors_quiz">LensesNMirrorsQuizActivity</string>
+    <string name="title_activity_lenses_nmirrors_experiment">LensesNMirrorsExperimentActivity
+    </string>
+    <string name="title_activity_laser_concept_ueq">LaserConceptUEQActivity</string>
+    <string name="title_activity_laser_concept_understand">LaserConceptUnderstandActivity</string>
+    <string name="title_activity_laser_concept_quiz">LaserConceptQuizActivity</string>
+    <string name="title_activity_laser_concept_experiment">LaserConceptExperiment</string>
+    <string name="title_activity_photonics_for_ict">PhotonicsForICT</string>
+    <string name="title_activity_optical_communication_ueq">OpticalCommunicationUEQActivity</string>
+    <string name="title_activity_optical_communication_experiment">OpticalCommunicationExperiment
+    </string>
+    <string name="title_activity_optical_communication_quiz">OpticalCommunicationQuiz</string>
+    <string name="title_activity_optical_communication_understand">OpticalCommunicationUnderstand
+    </string>
+    <string name="title_activity_optical_storage_ueq">OpticalStorageUEQActivity</string>
+    <string name="title_activity_optical_storage_experiment">OpticalStorageExperiment</string>
+    <string name="title_activity_optical_storage_quiz">OpticalStorageQuiz</string>
+    <string name="title_activity_optical_storage_understand">OpticalStorageUnderstand</string>
+    <string name="title_activity_image_nvideo_ueq">ImageNVideoUEQActivity</string>
+    <string name="title_activity_image_nvideo_experiment">ImageNvideoExperiment</string>
+    <string name="title_activity_image_nvideo_quiz">ImageNvideoQuiz</string>
+    <string name="title_activity_image_nvideo_understand">ImageNvideoUnderstand</string>
+    <string name="title_activity_energy_ln_d">EnergyLnDActivity</string>
+    <string name="title_activity_lightning_ueq">LightningUEQ</string>
+    <string name="title_activity_lightning_experiment">LightningExperiment</string>
+    <string name="title_activity_lightning_quiz">LightningQuiz</string>
+    <string name="title_activity_lightning_understand">LightningUnderstand</string>
+    <string name="title_activity_display_ueq">DisplayUEQ</string>
+    <string name="title_activity_display_experiment">DisplayExperiment</string>
+    <string name="title_activity_display_quiz">DisplayQuiz</string>
+    <string name="title_activity_display_understand">DisplayUnderstand</string>
+    <string name="title_activity_energy_ueq">EnergyUEQ</string>
+    <string name="title_activity_energy_experiment">EnergyExperiment</string>
+    <string name="title_activity_energy_quiz">EnergyQuiz</string>
+    <string name="title_activity_energy_understand">EnergyUnderstand</string>
+    <string name="title_activity_photonics_security">PhotonicsSecurityActivity</string>
+    <string name="title_activity_metrology_ueq">MetrologyUEQ</string>
+    <string name="title_activity_metrology_quiz">MetrologyQuiz</string>
+    <string name="title_activity_metrology_experiment">MetrologyExperiment</string>
+    <string name="title_activity_metrology_understand">MetrologyUnderstand</string>
+    <string name="title_activity_safety_security_ueq">SafetySecurityUEQ</string>
+    <string name="title_activity_safety_security_experiment">SafetySecurityExperiment</string>
+    <string name="title_activity_safety_security_quiz">SafetySecurityQuiz</string>
+    <string name="title_activity_safety_security_understand">SafetySecurityUnderstand</string>
+    <string name="title_activity_hn_lscience">HnLScienceActivity</string>
+    <string name="title_activity_microscopy_ueq">MicroscopyUEQ</string>
+    <string name="title_activity_microscopy_quiz">MicroscopyQuiz</string>
+    <string name="title_activity_microscopy_experiment">MicroscopyExperiment</string>
+    <string name="title_activity_microscopy_understand">MicroscopyUnderstand</string>
+    <string name="title_activity_imaging">ImagingActivity</string>
+    <string name="title_activity_imaging_quiz">ImagingQuiz</string>
+    <string name="title_activity_imaging_experiment">ImagingExperiment</string>
+    <string name="title_activity_imaging_understand">ImagingUnderstand</string>
+    <string name="title_activity_spectrometry_ueq">SpectrometryUEQ</string>
+    <string name="title_activity_spectrometry_quiz">SpectrometryQuiz</string>
+    <string name="title_activity_spectrometry_experiment">SpectrometryExperiment</string>
+    <string name="title_activity_spectrometry_understand">SpectrometryUnderstand</string>
+    <string name="title_activity_laser_therapy_ueq">LaserTherapyUEQ</string>
+    <string name="title_activity_laser_therapy_quiz">LaserTherapyQuiz</string>
+    <string name="title_activity_laser_therapy_experiment">LaserTherapyExperiment</string>
+    <string name="title_activity_laser_therapy_understand">LaserTherapyUnderstand</string>
+    <string name="your_score_is">Your score is </string>
+    <string name="answer_dot">Answer :</string>
+    <string name="btn_skip_intro">Skip Intro</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+
+</resources>
