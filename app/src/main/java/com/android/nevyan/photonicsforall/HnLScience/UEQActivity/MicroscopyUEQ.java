@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandActivity;
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandRessource;
 import com.android.nevyan.photonicsforall.exprience_tools.Experience;
 
 import com.android.nevyan.photonicsforall.HnLScience.Microscopy.MicroscopyExperiment;
@@ -66,7 +68,10 @@ public class MicroscopyUEQ extends AppCompatActivity {
         Experience.setExperience(MicroscopyExperiment.class, Ressource.microscopy, R.color.red_l1, view, this);
     }
     public void onCLKunderstand(View view){
-        Intent intent = new Intent(this, MicroscopyUnderstand.class);
+        Intent intent = new Intent(this, UnderstandActivity.class);
+        intent.putExtra("color",R.color.red_d);
+        intent.putExtra("urlFr", UnderstandRessource.FRmicroscopy);
+        intent.putExtra("urlEn", UnderstandRessource.ENmicroscopy);
         startActivity(intent);
     }
 }

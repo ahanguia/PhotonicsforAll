@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandActivity;
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandRessource;
 import com.android.nevyan.photonicsforall.exprience_tools.Experience;
 
 import com.android.nevyan.photonicsforall.PhotonicsForICT.ImageNVideo.ImageNvideoExperiment;
@@ -71,7 +73,10 @@ public class ImageNVideoUEQActivity extends AppCompatActivity {
         Experience.setExperience(ImageNvideoExperiment.class, Ressource.imagingNVideo, R.color.green_l1, view, this);
     }
     public void onCLKunderstand(View view){
-        Intent intent = new Intent(this, ImageNvideoUnderstand.class);
+        Intent intent = new Intent(this, UnderstandActivity.class);
+        intent.putExtra("color",R.color.green_d);
+        intent.putExtra("urlFr", UnderstandRessource.FRimagingNVideo);
+        intent.putExtra("urlEn", UnderstandRessource.ENimagingNVideo);
         startActivity(intent);
     }
 }

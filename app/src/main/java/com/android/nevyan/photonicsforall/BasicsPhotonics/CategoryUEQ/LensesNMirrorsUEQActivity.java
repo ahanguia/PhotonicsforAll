@@ -11,6 +11,8 @@ import android.widget.TextView;
 import com.android.nevyan.photonicsforall.BasicsPhotonics.LensesNMirrors.LensesNMirrorsExperimentActivity;
 import com.android.nevyan.photonicsforall.BasicsPhotonics.LensesNMirrors.LensesNMirrorsQuizActivity;
 import com.android.nevyan.photonicsforall.BasicsPhotonics.LensesNMirrors.LensesNMirrorsUnderstandActivity;
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandActivity;
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandRessource;
 import com.android.nevyan.photonicsforall.exprience_tools.Experience;
 import com.android.nevyan.photonicsforall.R;
 import com.android.nevyan.photonicsforall.exprience_tools.Ressource;
@@ -67,7 +69,10 @@ public class LensesNMirrorsUEQActivity extends AppCompatActivity {
     }
 
     public void onCLKunderstand(View view){
-        Intent intent = new Intent(this, LensesNMirrorsUnderstandActivity.class);
+        Intent intent = new Intent(this, UnderstandActivity.class);
+        intent.putExtra("color",R.color.blue_d);
+        intent.putExtra("urlFr", UnderstandRessource.FRlensesNMirrors);
+        intent.putExtra("urlEn", UnderstandRessource.ENlensesNMirrors);
         startActivity(intent);
     }
 }

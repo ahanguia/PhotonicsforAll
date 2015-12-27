@@ -11,6 +11,8 @@ import android.widget.TextView;
 import com.android.nevyan.photonicsforall.EnergyLnD.Lightning.LightningExperiment;
 import com.android.nevyan.photonicsforall.EnergyLnD.Lightning.LightningQuiz;
 import com.android.nevyan.photonicsforall.EnergyLnD.Lightning.LightningUnderstand;
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandActivity;
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandRessource;
 import com.android.nevyan.photonicsforall.exprience_tools.Experience;
 
 import com.android.nevyan.photonicsforall.R;
@@ -67,7 +69,10 @@ public class LightningUEQ extends AppCompatActivity {
         Experience.setExperience(LightningExperiment.class, Ressource.lightning, R.color.yellow_l1, view, this);
     }
     public void onCLKunderstand(View view){
-        Intent intent = new Intent(this, LightningUnderstand.class);
+        Intent intent = new Intent(this, UnderstandActivity.class);
+        intent.putExtra("color",R.color.yellow_d);
+        intent.putExtra("urlFr", UnderstandRessource.FRlightning);
+        intent.putExtra("urlEn", UnderstandRessource.ENlightning);
         startActivity(intent);
     }
 }

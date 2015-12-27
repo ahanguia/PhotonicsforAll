@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandActivity;
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandRessource;
 import com.android.nevyan.photonicsforall.exprience_tools.Experience;
 
 import com.android.nevyan.photonicsforall.HnLScience.LaserTherapy.LaserTherapyExperiment;
@@ -70,7 +72,10 @@ public class LaserTherapyUEQ extends AppCompatActivity {
         Experience.setExperience(LaserTherapyExperiment.class, Ressource.laserTherapy, R.color.red_l1, view, this);
     }
     public void onCLKunderstand(View view){
-        Intent intent = new Intent(this, LaserTherapyUnderstand.class);
+        Intent intent = new Intent(this, UnderstandActivity.class);
+        intent.putExtra("color",R.color.red_d);
+        intent.putExtra("urlFr", UnderstandRessource.FRlaserTherapy);
+        intent.putExtra("urlEn", UnderstandRessource.ENlaserTherapy);
         startActivity(intent);
     }
 }

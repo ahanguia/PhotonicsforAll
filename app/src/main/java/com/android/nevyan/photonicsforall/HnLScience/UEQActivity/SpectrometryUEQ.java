@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandActivity;
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandRessource;
 import com.android.nevyan.photonicsforall.exprience_tools.Experience;
 
 import com.android.nevyan.photonicsforall.HnLScience.Spectrometry.SpectrometryExperiment;
@@ -67,7 +69,10 @@ public class SpectrometryUEQ extends AppCompatActivity {
         Experience.setExperience(SpectrometryExperiment.class, Ressource.spectrometry, R.color.red_l1, view, this);
     }
     public void onCLKunderstand(View view){
-        Intent intent = new Intent(this, SpectrometryUnderstand.class);
+        Intent intent = new Intent(this, UnderstandActivity.class);
+        intent.putExtra("color",R.color.red_d);
+        intent.putExtra("urlFr", UnderstandRessource.FRspectrometry);
+        intent.putExtra("urlEn", UnderstandRessource.ENspectrometry);
         startActivity(intent);
     }
 }

@@ -7,6 +7,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandActivity;
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandRessource;
 import com.android.nevyan.photonicsforall.exprience_tools.Experience;
 
 import com.android.nevyan.photonicsforall.PhotonicsSecurity.SafetySecurity.SafetySecurityExperiment;
@@ -59,7 +61,10 @@ public class SafetySecurityUEQ extends AppCompatActivity {
         Experience.setExperience(SafetySecurityExperiment.class, Ressource.safetySecurity, R.color.orange_l1, view, this);
     }
     public void onCLKunderstand(View view){
-        Intent intent = new Intent(this, SafetySecurityUnderstand.class);
+        Intent intent = new Intent(this, UnderstandActivity.class);
+        intent.putExtra("color",R.color.orange_d);
+        intent.putExtra("urlFr", UnderstandRessource.FRsafetySecurity);
+        intent.putExtra("urlEn", UnderstandRessource.ENsafetySecurity);
         startActivity(intent);
     }
 }

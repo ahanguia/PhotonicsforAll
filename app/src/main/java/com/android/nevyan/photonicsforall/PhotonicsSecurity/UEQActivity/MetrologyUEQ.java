@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandActivity;
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandRessource;
 import com.android.nevyan.photonicsforall.exprience_tools.Experience;
 import com.android.nevyan.photonicsforall.PhotonicsSecurity.Metrology.MetrologyExperiment;
 import com.android.nevyan.photonicsforall.PhotonicsSecurity.Metrology.MetrologyQuiz;
@@ -67,7 +69,10 @@ public class MetrologyUEQ extends AppCompatActivity {
         Experience.setExperience(MetrologyExperiment.class, Ressource.metrology, R.color.orange_l1, view, this);
     }
     public void onCLKunderstand(View view){
-        Intent intent = new Intent(this, MetrologyUnderstand.class);
+        Intent intent = new Intent(this, UnderstandActivity.class);
+        intent.putExtra("color",R.color.orange_d);
+        intent.putExtra("urlFr", UnderstandRessource.FRmetrology);
+        intent.putExtra("urlEn", UnderstandRessource.ENmetrology);
         startActivity(intent);
     }
 }

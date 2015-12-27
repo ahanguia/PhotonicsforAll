@@ -6,14 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ListView;
 import android.widget.TextView;
 
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandActivity;
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandRessource;
 import com.android.nevyan.photonicsforall.exprience_tools.Experience;
 import com.android.nevyan.photonicsforall.R;
 import com.android.nevyan.photonicsforall.BasicsPhotonics.explore_control.ExploreControlExperimentActivity;
 import com.android.nevyan.photonicsforall.BasicsPhotonics.explore_control.ExploreControlQuizActivity;
-import com.android.nevyan.photonicsforall.BasicsPhotonics.explore_control.ExploreControleUnderstandActivity;
 import com.android.nevyan.photonicsforall.exprience_tools.Ressource;
 
 
@@ -68,7 +68,10 @@ public class ExploreControlUEQActivity extends AppCompatActivity {
         Experience.setExperience(ExploreControlExperimentActivity.class, Ressource.exploreControl, R.color.blue_l1, view,this);
     }
     public void onCLKunderstand(View view){
-        Intent intent = new Intent(this, ExploreControleUnderstandActivity.class);
+        Intent intent = new Intent(this, UnderstandActivity.class);
+        intent.putExtra("color",R.color.blue_d);
+        intent.putExtra("urlFr", UnderstandRessource.FRexploreControl);
+        intent.putExtra("urlEn", UnderstandRessource.ENexploreControl);
         startActivity(intent);
     }
 }

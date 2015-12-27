@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandActivity;
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandRessource;
 import com.android.nevyan.photonicsforall.exprience_tools.Experience;
 import com.android.nevyan.photonicsforall.HnLScience.Imaging.ImagingExperiment;
 import com.android.nevyan.photonicsforall.HnLScience.Imaging.ImagingQuiz;
@@ -67,7 +69,10 @@ public class ImagingActivityUEQ extends AppCompatActivity {
 
     }
     public void onCLKunderstand(View view){
-        Intent intent = new Intent(this, ImagingUnderstand.class);
+        Intent intent = new Intent(this, UnderstandActivity.class);
+        intent.putExtra("color",R.color.red_d);
+        intent.putExtra("urlFr", UnderstandRessource.FRimaging);
+        intent.putExtra("urlEn", UnderstandRessource.ENimaging);
         startActivity(intent);
     }
 }

@@ -12,6 +12,8 @@ import com.android.nevyan.photonicsforall.EnergyLnD.Display.DisplayExperiment;
 import com.android.nevyan.photonicsforall.EnergyLnD.Display.DisplayQuiz;
 import com.android.nevyan.photonicsforall.EnergyLnD.Display.DisplayUnderstand;
 
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandActivity;
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandRessource;
 import com.android.nevyan.photonicsforall.exprience_tools.Experience;
 import com.android.nevyan.photonicsforall.R;
 import com.android.nevyan.photonicsforall.exprience_tools.Ressource;
@@ -68,7 +70,10 @@ public class DisplayUEQ extends AppCompatActivity {
 
 
     public void onCLKunderstand(View view){
-        Intent intent = new Intent(this, DisplayUnderstand.class);
+        Intent intent = new Intent(this, UnderstandActivity.class);
+        intent.putExtra("color",R.color.yellow_d);
+        intent.putExtra("urlFr", UnderstandRessource.FRdisplay);
+        intent.putExtra("urlEn", UnderstandRessource.ENdisplay);
         startActivity(intent);
     }
 }

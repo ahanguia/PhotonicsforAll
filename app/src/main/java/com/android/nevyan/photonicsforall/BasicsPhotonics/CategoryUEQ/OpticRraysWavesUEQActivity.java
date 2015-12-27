@@ -11,6 +11,8 @@ import android.widget.TextView;
 import com.android.nevyan.photonicsforall.BasicsPhotonics.OpticRaysWaves.OpticRraysWavesExperimentActivity;
 import com.android.nevyan.photonicsforall.BasicsPhotonics.OpticRaysWaves.OpticRraysWavesQuizActivity;
 import com.android.nevyan.photonicsforall.BasicsPhotonics.OpticRaysWaves.OpticRraysWavesUnderstandActivity;
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandActivity;
+import com.android.nevyan.photonicsforall.Understand_tools.UnderstandRessource;
 import com.android.nevyan.photonicsforall.exprience_tools.Experience;
 import com.android.nevyan.photonicsforall.R;
 import com.android.nevyan.photonicsforall.exprience_tools.Ressource;
@@ -67,7 +69,10 @@ public class OpticRraysWavesUEQActivity extends AppCompatActivity {
 
     }
     public void onCLKunderstand(View view){
-        Intent intent = new Intent(this, OpticRraysWavesUnderstandActivity.class);
+        Intent intent = new Intent(this, UnderstandActivity.class);
+        intent.putExtra("color",R.color.blue_d);
+        intent.putExtra("urlFr", UnderstandRessource.FRopticRrays);
+        intent.putExtra("urlEn", UnderstandRessource.ENopticRrays);
         startActivity(intent);
     }
 }
